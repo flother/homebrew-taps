@@ -1,8 +1,8 @@
 class Spreet < Formula
   desc "Create a spritesheet from a set of SVG images"
   homepage "https://github.com/flother/spreet"
-  license "MIT"
   version "0.2.0"
+  license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
