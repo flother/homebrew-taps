@@ -15,7 +15,7 @@ class Spreet < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+    if Hardware::CPU.intel?
       url "https://github.com/flother/spreet/releases/download/v#{version}/spreet-x86_64-unknown-linux-musl.tar.gz"
       sha256 "c8d54b0bbfe2f1ac39a96d4cf02ece5e826b98fe99e58bb69e4db62e80d7876d"
     end
