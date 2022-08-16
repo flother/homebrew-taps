@@ -1,27 +1,27 @@
 class Spreet < Formula
   desc "Create a spritesheet from a set of SVG images"
   homepage "https://github.com/flother/spreet"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/flother/spreet/releases/download/v#{version}/spreet-x86_64-apple-darwin.tar.gz"
-      sha256 "83275515aa5b3fbd18203447df49a90fd6f343f2c32ad874073616dc1e54ccc6"
+      sha256 "602b0179245e1348661893e2782efd6a319d657031350018dfcdafd35ceb30fc"
     elsif Hardware::CPU.arm?
       url "https://github.com/flother/spreet/releases/download/v#{version}/spreet-aarch64-apple-darwin.tar.gz"
-      sha256 "b637ab80a59b13cd062bc2497b1de5370aa14a031409e2fe34f3fd471e239a68"
+      sha256 "cf84cd265a7cbec3b925b5efbabe92b165052aff5b9b82c090deadf70fa5a17b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/flother/spreet/releases/download/v#{version}/spreet-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "15f056a6604122ad9c12a32001234de7cf3e01b721aa2779ed61d3ac65722de5"
+      sha256 "269ac8bf0c11e9ad9e97cd2d110a5cbb0dab67ff705a6b1bb1e876fe7280fc3a"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/flother/spreet/releases/download/v#{version}/spreet-arm-unknown-linux-gnueabihf.tar.gz"
-      sha256 "112b563b29608903cebbbeac3a361dc442fcb787220f615e38f78d113bab8b8a"
+      sha256 "6c4e59fb39fecb5bbc5d3cd71c03b610c2dd29f7e2218cde1e88accd7a78db14"
     end
   end
 
