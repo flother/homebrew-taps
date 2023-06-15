@@ -7,21 +7,21 @@ class Spreet < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/flother/spreet/releases/download/v#{version}/spreet-x86_64-apple-darwin.tar.gz"
-      sha256 "f1feacdefd9bbfb082ec945e1c83680330b7d9c0b06e9119f152652f162e4089"
+      sha256 "7ef10b3351ed89f18a0db704cee20b8b89ee804f5799b72744fd47dd385d2aca"
     elsif Hardware::CPU.arm?
       url "https://github.com/flother/spreet/releases/download/v#{version}/spreet-aarch64-apple-darwin.tar.gz"
-      sha256 "bf312a8203057fc1c010a7d77e0e666810dafbd01132ef8eeec3692d527debc3"
+      sha256 "0686825f77986440c85c170d51be512796d8af2f0c1d0629727745d8bd604646"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/flother/spreet/releases/download/v#{version}/spreet-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "6fc9800064949bd034975229ba7b75d2584ec7a3d471906b7daa1f8039b476d1"
+      sha256 "e1891c7e2c5f333027510ff2598eb99721dd3833b3c2c82ceb98eb00af5cb04b"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/flother/spreet/releases/download/v#{version}/spreet-arm-unknown-linux-gnueabihf.tar.gz"
-      sha256 "1ef8620e6b7795be80bd728eb5cb7bbdf37a81f032b5c894cf76c8f3abf8b6f7"
+      sha256 "51dcf3b89053113e6ad34bd513997d22416f4a140cb336d035b8d915abcacc4c"
     end
   end
 
